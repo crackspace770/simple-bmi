@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             //after validated, display result
             if(!isEmptyFields){
-                val bmi = inputHeight.toDouble() / (inputWeight.toDouble() * inputWeight.toDouble())
+                val bmi = inputWeight.toDouble() / (inputHeight.toDouble() * inputHeight.toDouble())
                 tvResult.text = bmi.toString()
 
                 if(bmi <= 18.5){
